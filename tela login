@@ -245,7 +245,7 @@
               <input type="pwd" id="password" class="campo" name="pwd" placeholder="Senha">
               <div class="form-check mb-3">
                 <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                  <input class="form-check-input" type="checkbox" name="remember"> Lembre-se de mim
                 </label>
               </div>
               <input type="submit" class="botao" value="Entrar">
