@@ -7,9 +7,9 @@ function validarSobrenome(elSobrenome) {
     let sobrenomenomeValor = elSobrenome.value
     let invFeedSobrenomenomeValor = document.getElementById("invSobrenome")
 
-    if (sobrenomenomeValor === "" || sobrenomenomeValorValor == null) {
+    if (sobrenomenomeValor === "" || sobrenomenomeValor == null) {
         informarCampoObrigatorio(invFeedSobrenomenomeValor)
-    } else if (validarFormatoNome(sobrenomenomeValorValor) == false) {
+    } else if (validarFormatoNome(sobrenomenomeValor) == false) {
         informarFormatoInvalido(invFeedSobrenomenomeValor)
     } else {
         removerFeedback(invFeedSobrenomenomeValor)
