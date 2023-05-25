@@ -1,0 +1,113 @@
+.anuncio {
+    width: 35%;
+    border-radius: 10px;
+    background: rgb(236, 231, 242);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.anuncio:hover {
+    background: lightblue;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 568px) {
+
+    .cards-wrapper {
+        justify-content: center;
+    }
+
+    #carouselExample {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .cards-wrapper {
+        display: flex;
+        /*height: 400px;*/
+    }
+
+
+    .card {
+        border-radius: 10px;
+        ;
+        margin: 0.5rem;
+        /*width: calc(100%/4);*/
+        width: 250px;
+        height: 300px;
+        background: rgb(236, 231, 242)
+    }
+
+
+    .card:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+
+    }
+
+
+
+    .imagem-card {
+        margin: 1rem 0 0 20%;
+        width: 150px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:567px) {
+
+    .card {
+        border-radius: 10px;
+        ;
+        margin: 0.5rem;
+        /*width: calc(100%/4);*/
+        width: 250px;
+        height: 300px;
+        background: rgb(236, 231, 242)
+    }
+
+
+    .card:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+
+    }
+
+
+    .imagem-card {
+
+        margin: 1rem 0 0 17%;
+        width: 150px;
+
+        border-radius: 10px;
+    }
+
+    .card:not(:first-child) {
+        display: none;
+    }
+
+    .estrelas {
+        margin: 0 0 0 25%;
+    }
+}
