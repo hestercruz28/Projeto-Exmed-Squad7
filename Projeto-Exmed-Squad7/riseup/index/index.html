@@ -11,262 +11,10 @@
     rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
     </script>
-    <style>
-      body{
-        background-color: #263459;
-      }
-
-      .exmed-image {
-      background-image: url("b1.png");
-      background-color: #263459;
-      height: 450px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 1280px 550px;
-      position: center;
-    }
-
-    .exmed-text {
-      font-family: Sans-serif;
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-    }
-
-    .btn {
-    width:100%;
-    display:block;
-    float:left;
-    background-color:#00d1bc;
-    border:none;
-    color:#5c666b;
-    cursor:pointer;
-    padding:9px 70px;
-    text-align:center;
-    font-size:18px;
-    -webkit-border-radius:4px;
-    border-radius:4px;
-    transition:0.3s;
-    }
-    .btn:hover {
-    background-color:#263459;
-    color:white;
-    }
-
-    .content-c1 {
-    -webkit-border-radius: 4px;
-    border-radius: 10px 10px 10px 10px;
-    padding: 30px;
-    width: 100%;
-    max-width: 320px;
-    position: relative;
-    padding: 0px;
-    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    text-align: center;
-    }
-
-    img {
-     text-align:center;
-    }
-    div {
-    text-align:center;
-    }
-    .botao {
-    width:100%;
-    display:block;
-    float:left;
-    background-color:#263459;
-    border:none;
-    color:#fff;
-    cursor:pointer;
-    padding:15px 90px;
-    text-align:center;
-    font-size:18px;
-    -webkit-border-radius:4px;
-    border-radius:4px;
-    transition:0.3s;
-    }
-    .botao:hover {
-    background-color:#9F9F9F;
-    }
-    .rodape-prin {
-    background-color:rgb(0,0,0);
-    clear:both;
-    padding:28px;
-    color:rgb(250,255,250);
-    font-size:15px;
-    font-family:"arial",sans-serif;
-    }
-    .icones-sociais li {
-    display:inline-block;
-    width:40px;
-    height:40px;
-    }
-    
-    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-    
-   .footer-distributed {
-    background:#263459;
-    box-shadow:0 1px 1px 0 rgba(0,0,0,0.12);
-    box-sizing:border-box;
-    width:100%;
-    text-align:left;
-    padding:50px 60px 40px;
-    overflow:hidden;
-    }
-    section {
-    width:100%;
-    display:inline-block;
-    background:#ccc;
-    height:60vh;
-    text-align:center;
-    font-size:22px;
-    font-weight:700;
-    text-decoration:underline;
-    }
-    .footer-distributed .footer-left {
-    float:left;
-    }
-    .footer-distributed h3 {
-    color:#ffffff;
-    margin:0 0 10px;
-    }
-    .footer-distributed h3 span {
-    color:#5383d3;
-    }
-    .footer-distributed .footer-links {
-    color:#ffffff;
-    margin:0 0 10px;
-    padding:0;
-    }
-    .footer-distributed .footer-links a {
-    display:inline-block;
-    line-height:1.8;
-    text-decoration:none;
-    color:inherit;
-    }
-    .footer-distributed .footer-company-name {
-    color:#8f9296;
-    font-size:14px;
-    font-weight:normal;
-    margin:0;
-    }
-    .footer-distributed .footer-icons {
-    margin-top:40px;
-    }
-    .footer-distributed .footer-icons a {
-    display:inline-block;
-    width:35px;
-    height:35px;
-    cursor:pointer;
-    background-color:black;
-    border-radius:2px;
-    font-size:20px;
-    color:#ffffff;
-    text-align:center;
-    line-height:35px;
-    margin-right:3px;
-    margin-bottom:5px;
-    }
-    .footer-distributed .footer-right {
-    float:right;
-    }
-    .footer-distributed .footer-right p {
-    display:inline-block;
-    vertical-align:top;
-    margin:15px 42px 0 0;
-    color:#ffffff;
-    }
-
-            .footer-distributed form {
-    display:inline-block;
-    }
-    .footer-distributed form input,.footer-distributed form textarea {
-    display:block;
-    border-radius:3px;
-    box-sizing:border-box;
-    background-color:black;
-    box-shadow:0 1px 0 0 rgba(255,255,255,0.1);
-    border:none;
-    resize:none;
-    font:inherit;
-    font-size:14px;
-    font-weight:normal;
-    color:#d1d2d2;
-    width:400px;
-    padding:18px;
-    }
-    .footer-distributed::-webkit-input-placeholder {
-    color:#5c666b;
-    }
-    .footer-distributed::-moz-placeholder {
-    color:#5c666b;
-    opacity:1;
-    }
-    .footer-distributed:-ms-input-placeholder {
-    color:#5c666b;
-    }
-    .footer-distributed form input {
-    height:55px;
-    margin-bottom:15px;
-    }
-    .footer-distributed form textarea {
-    height:100px;
-    margin-bottom:20px;
-    }
-    .footer-distributed form button {
-    border-radius:3px;
-    background-color:#33383b;
-    color:#ffffff;
-    border:0;
-    padding:15px 50px;
-    font-weight:bold;
-    float:right;
-    }
-
-            @media (max-width:1000px) {
-    .footer-distributed {
-    font:bold 14px sans-serif;
-    }
-    .footer-distributed .footer-company-name {
-    font-size:12px;
-    }
-    .footer-distributed form input,.footer-distributed form textarea {
-    width:250px;
-    }
-    .footer-distributed form button {
-    padding:10px 35px;
-    }
-    }@media (max-width:800px) {
-    .footer-distributed {
-    padding:30px;
-    }
-    .footer-distributed .footer-left,.footer-distributed .footer-right {
-    float:none;
-    max-width:300px;
-    margin:0 auto;
-    }
-    .footer-distributed .footer-left {
-    margin-bottom:40px;
-    }
-    .footer-distributed form {
-    margin-top:30px;
-    }
-    .footer-distributed form {
-    display:block;
-    }
-    .footer-distributed form button {
-    float:none;
-    }
-    }
-    </style>
   </head>
-  
   <body>
+
+
     <nav class="navbar navbar-expand-sm bg-light navbar-dark ">
       <div class="container-fluid display: flex;">
         <a class="navbar-brand " href="inicial.html" style=" padding-left: 100px;">
@@ -322,6 +70,7 @@
     </nav>
     <br>
 
+
     <div class="exmed-image">
       <div class="exmed-text">
         <h1 style="font-size:50px; text-align: center; color: white;">
@@ -333,168 +82,136 @@
     </div>
 
 
-
-
     <div class="container-fluid bg- ligth mt-4">
-
-
       <div class="row">
         <div class="col p-3" style="background-color: white;">
-        
-          <img src="l1c1.png" class="rounded" alt="LOG IN" width="280" height="300" style="text-align: right;">
-
+          <img src="l1c4.png" class="rounded" alt="LOG IN" width="280" height="300" style="text-align: right;">
         </div>
         <div class="col p-3" style="background-color: white;">
-
           <img src="login01.png" class="rounded" alt="LOG IN" width="380" height="300" style="text-align: right;">
-
         </div>
         <div class="col p-3" style="background-color: white;">
-          
-          <h1 style="font-size:20px; text-align: left; color: black;">
-            Cuidar da sua saúde <br>
-            nunca foi tão fácil
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 style="font-size:20px; text-align: center; ">
+            Se já é cliente exmed, <br>
+            faça seu login aqui:
           </h1>
-
+          <input type="submit" class="btnlogin" value="LOG IN">
         </div>
-        <div class="col p-3" style="background-color: white;"></div>
+        <div class="col p-3" style="background-color: white;">
+          <img src="l1c4.png" class="rounded" alt="LOG IN" width="280" height="300" style="text-align: right;">
+        </div>
       </div>
 
-
       <div class="row">
-        <div class="col p-3" style="background-color: white;"></div>
         <div class="col p-3" style="background-color: white;">
-
+          <img src="l2c4.png" class="rounded" alt="SIG IN" width="280" height="300" style="text-align: left;">
+        </div>
+        <div class="col p-3" style="background-color: white;">
+          <br>
+          <br>
+          <br>
+          <br>
           <h1 style="font-size:20px; text-align: center; color: black;">
-            Cuidar da sua saúde <br>
-            nunca foi tão fácil
+            Se ainda não é cliente <br>
+            faça seu cadastro:
           </h1>
-
+          <input type="submit" class="btnreg" value="SIG IN">
         </div>
         <div class="col p-3" style="background-color: white;">
-          
-          <img src="reg.png" class="rounded" alt="LOG IN" width="380" height="380" style="text-align: left;">
-        
+          <img src="reg.png" class="rounded" alt="SIG IN" width="380" height="300" style="text-align: left;">
         </div>
-        <div class="col p-3" style="background-color: white;"></div>
+        <div class="col p-3" style="background-color: white;">
+          <img src="l2c4.png" class="rounded" alt="SIG IN" width="280" height="300" style="text-align: left;">
+        </div>
       </div>
 
       <div class="row">
-        <div class="col p-3" style="background-color: white;"></div>
         <div class="col p-3" style="background-color: white;">
-
-          <img src="qr.png" class="rounded" alt="LOG IN" width="150" height="150" style="text-align: right;">
-
+          <img src="l3c4.png" class="rounded" alt="QR" width="280" height="300" style="text-align: left;">
         </div>
         <div class="col p-3" style="background-color: white;">
-          
-          <h1 style="font-size:20px; text-align: left; color: black;">
-            Cuidar da sua saúde <br>
-            nunca foi tão fácil
+          <img src="qr.png" class="rounded" alt="QR" width="380" height="300" style="text-align: right;">
+        </div>
+        <div class="col p-3" style="background-color: white;">
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 style="font-size:20px; text-align: center; color: black;">
+            Se quiser visitar <br>
+            nosso, simule:
           </h1>
+          <input type="submit" class="btnsim" value="SIMULE">
+        </div>
+        <div class="col p-3" style="background-color: white;">
+          <img src="l3c4.png" class="rounded" alt="SIG IN" width="280" height="300" style="text-align: left;">
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-sm-8 p-3 text-black" style="background-color: white;">
+          <h1 style="font-size:40px; text-align: left; color: #263459;">O que dizem sobre nós </h1>
+        </div>
+        <div class="col-sm-4 p-3 text-black" style="background-color: white;">
 
         </div>
-        <div class="col p-3" style="background-color: white;"></div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="card mb-3" style="background-color: #ffffffef;">
+        <img src="b2.png" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text" style="color:#263459;">
+            "Contratei a EXMED com certa desconfiança e hoje recomendo para todos sem medo de errar. <br>
+            Todo processo muito claro e a equipe está sempre disponível para qualquer dúvida ou auxílio. <br>
+            Sinto muita segurança em relação a qualquer imprevisto de saúde que possa acontecer pois já <br>
+            passei por essa experiência na prática e tudo aconteceu sem dificuldade alguma."
+          </p>
+          <h5 class="card-title" style="color: #263459"><b>- Fábio Fazio</b></h5>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="background-color: #ffffffef;">
+        <img src="b2.png" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text" style="color:#263459;">
+            Em setembro/2021 eu tive um sério problema renal. Eu precisei ir na urgência e fazer diversos exames. <br>
+            Por ter o seguro Exmed, eu pude fazer todos os procedimentos cirúrgicos no Real Hospital Português, <br> 
+            um dos melhores da cidade. Saber que tenho um seguro bom e efetivo, sem gastar além do necessário, <br>
+            eu pago que nem sinto no bolso!
+          </p>
+          <h5 class="card-title" style="color: #263459"><b>- Daniel Moraes</b></h5>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="background-color: #ffffffef;">
+        <img src="b2.png" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text" style="color:#263459;">
+            Sendo esta a minha segunda gravidez, consigo ter um planejamento mais detalhado do que precisarei para 
+            meu bebê chegue da forma mais saudável a este mundo. Os serviços de saúde estão cada vez mais caros e, 
+            como mãe, não posso abrir mão de qualidade de atendimento e estrutura, além de precisar aliar essas 
+            necessidades com economia financeira.
+          </p>
+          <h5 class="card-title" style="color: #263459;"><b>- Monick Ribeiro</b></h5>
+        </div>
       </div>
 
     </div>
-
 
     
-        
-
-
-    <div class="container mt-3 rounded bg-light" >
-      <div class="row">
-        <div class="col p-3 bg-light text-black">
-          <img src="login1.png" class="rounded" alt="Login" width="190"
-          height="200">
-          <h1 style="font-size: smaller;">
-            Faça seu login clicando no botão a baixo
-          </h1>
-          <input type="submit" class="botao" value="LOG IN" onclick="window.location.href='/riseup/login/login.html'">
-        </div>
-        <div class="col p-3 bg-light text-black">
-          <img src="regulation.png" class="rounded" alt="Cadastro"
-          width="190" height="200">
-          <h1 style="font-size: smaller;">
-            Cadastre-se na exmed clicando abaixo
-          </h1>
-          <input type="submit" class="botao" value="SIG IN" onclick="window.location.href='/riseup/Tela de Cadastro/cadastro.html'">
-        </div>
-        <div class="col p-3 bg-light text-black">
-          <img src="qr.png" class="rounded" alt="Cadastro" width="190"
-          height="200">
-          <h1 style="font-size: smaller;">
-            Simule agora clicando abaixo
-          </h1>
-          <input type="submit" class="botao" value="SIMULE">
-        </div>
-      </div>
-    </div>
     <br>
-
-
-
-    <div class="container-fluid border" style="background-color: #ffffff;">
-      <div class="container mt-3">
-        <div class="row">
-
-          <div class="col p-3 bg text-dark">
-            <div class="wrapper fadeInDown">
-              <div class="card" style="width:300px">
-                <div class="content-c1">
-                  <img class="card-img-top" src="b2.png" alt="." style="width:20%; text-align: left;">
-                  <div class="card-body">
-                            "Contratei a EXMED com certa desconfiança e hoje recomendo para todos sem medo de errar. 
-                            Todo processo muito claro e a equipe está sempre disponível para qualquer dúvida ou auxílio. 
-                            Sinto muita segurança em relação a qualquer imprevisto de saúde que possa acontecer pois já 
-                            passei por essa experiência na prática e tudo aconteceu sem dificuldade alguma."
-
-                            <h1 style="color: #00d1bc; font-size:20px; text-align: center;"><b>- Fábio Fazio</b></h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col p-3 bg text-dark">
-            <div class="wrapper fadeInDown">
-              <div class="card" style="width:300px">
-                <div class="content-c1">
-                  <img class="card-img-top" src="b2.png" alt="." style="width:20%; text-align: left;">
-                  <div class="card-body">
-                    Em setembro/2021 eu tive um sério problema renal. Eu precisei ir na urgência e fazer diversos exames. 
-                    Por ter o seguro Exmed, eu pude fazer todos os procedimentos cirúrgicos no Real Hospital Português, 
-                    um dos melhores da cidade. Saber que tenho um seguro bom e efetivo, sem gastar além do necessário, 
-                    eu pago que nem sinto no bolso!
-                    <h1 style="color: #00d1bc; font-size:20px; text-align: center;"><b>- Daniel Moraes</b></h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col p-3 bg text-dark">
-            <div class="wrapper fadeInDown">
-              <div class="card" style="width:300px">
-                <div class="content-c1">
-                  <img class="card-img-top" src="b2.png" alt="." style="width:20%; text-align: left;">
-                  <div class="card-body">
-                    Sendo esta a minha segunda gravidez, consigo ter um planejamento mais detalhado do que precisarei para 
-                    que meu bebê chegue da forma mais saudável a este mundo. Os serviços de saúde estão cada vez mais caros e, 
-                    como mãe, não posso abrir mão de qualidade de atendimento e estrutura, além de precisar aliar essas 
-                    necessidades com economia financeira.
-                    <h1 style="color: #00d1bc; font-size:20px; text-align: center;"><b>- Monick Ribeiro</b></h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
+    <br>
 
     <footer class="footer-distributed">
       <div class="footer-left">
