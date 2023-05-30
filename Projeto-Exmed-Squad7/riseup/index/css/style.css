@@ -24,7 +24,7 @@
       color: white;
     }
 
-    .btnlogin {
+    .btnlcs {
     width:100%;
     display:block;
     float:left;
@@ -39,47 +39,7 @@
     border-radius:4px;
     transition:0.3s;
     }
-    .btnlogin:hover {
-    background-color:#5c666b;
-    color: white;
-    }
-
-    .btnreg {
-    width:100%;
-    display:block;
-    float:left;
-    background-color:#00d1bc;
-    border:none;
-    color: white;
-    cursor:pointer;
-    padding:9px 70px;
-    text-align:center;
-    font-size:18px;
-    -webkit-border-radius:4px;
-    border-radius:4px;
-    transition:0.3s;
-    }
-    .btnreg:hover {
-    background-color:#5c666b;
-    color: white;
-    }
-
-    .btnsim {
-    width:100%;
-    display:block;
-    float:left;
-    background-color:#6ADCDD;
-    border:none;
-    color: white;
-    cursor:pointer;
-    padding:9px 70px;
-    text-align:center;
-    font-size:18px;
-    -webkit-border-radius:4px;
-    border-radius:4px;
-    transition:0.3s;
-    }
-    .btnsim:hover {
+    .btnlcs:hover {
     background-color:#5c666b;
     color: white;
     }
@@ -100,8 +60,8 @@
     transition:0.3s;
     }
     .btn:hover {
-    background-color:#263459;
-    color:white;
+    background-color:#68d8cd;
+    color:#5c666b;
     }
 
     .content-c1 {
