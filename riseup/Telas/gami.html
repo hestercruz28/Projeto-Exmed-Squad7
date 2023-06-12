@@ -1,15 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link href="../Css/gameficacao.css" rel="stylesheet">
-  <script src="../Js/script-gameficacao/gameficacao.js" type="module" defer>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Gamificação
+  </title>
+  <link href="../gamificação/css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="../Css/Popup.css" rel="stylesheet">
+  <link href="../Css/style-pagina.css" rel="stylesheet">
+  <!--
+     <link href="../Página01/Estilos/style-carrosel.css" rel="stylesheet"> 
+  -->
+  <link href="../Css/game.css" rel="stylesheet">
+  <script src="../Js/script-gameficacao/appGami.js" type="module">
   </script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <title>Gamificação</title>
 </head>
 
 <body>
@@ -27,209 +35,566 @@
               <b> Início </b>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#8f9296;">
-              <b> Para Você </b>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color:#8f9296;">
+              <b> Para você </b>
             </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="cadastro.html" style="color: #263459;">
+                  Cadastre-se
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./login.html" style="color: #263459;">
+                  Login
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./gami.html" style="color: #263459;">
+                  Simulação
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" style="color:#8f9296;">
               <b> Central de ajuda </b>
             </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color:#8f9296;">
-              <b> Perfil </b>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#8f9296;">
+              <b>Perfil</b>
             </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#" style="color: #263459;">
-                  Sair
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#" style="color: #263459;">
-                  Meus dados
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./gami.html" style="color: #263459;">
-                  Histórico de pontos
-                </a>
-              </li>
-            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- Conteúdo de curiosidade -->
+  <div class="container text-center mt-4">
+    <div class="row justify-content-evenly">
+      <div class="anuncio col-md-4 mb-4">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modal1">
+          <div>
+            <h3 class="mt-2">
+              Como ganhar mais Excoins
+            </h3>
+            <p>
+              Clique para saber
+            </p>
+          </div>
+        </a>
+      </div>
 
-  <div class="mt-2 p-5 text-white rounded"
-    style="max-width: 1300px; height: 300px; display: flex; margin: 0 auto; background: white; border: 1px solid #afaeae;">
-    <div class="excoin-left" style="margin-right: 200px; margin-left: 80px;">
-      <div class="align-left">
-        <div style="width: 300px;">
-          <a href="#">
-            <img src="https://cdn-icons-png.flaticon.com/128/709/709722.png" alt="Imagem de Perfil"
-              style="width: 130px; height: 130px; border-radius: 50%;">
-          </a>
-          <br><br>
-          <h5 style="color: black;">Sua pontuação:</h5>
-        </div>
+      <div class="anuncio col-md-4 mb-4">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modal2">
+          <div>
+            <h3 class="mt-2">
+              Recolha seus Excoins
+            </h3>
+            <p>
+              Clique para saber
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="anuncio col-md-4 mb-4">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modal3">
+          <div>
+            <h3 class="mt-2">
+              Convide amigos e ganhe
+            </h3>
+            <p>
+              Clique para saber
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="anuncio col-md-4 mb-4">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modal4">
+          <div>
+            <h3 class="mt-2">Atribua feedbacks e ganhe</h3>
+            <p>Clique para saber</p>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="excoin-right">
-      <div class="text-align">
-        <div class="mt-4 p-2 text-white rounded" style="width: 280px; background: #263459; display: inline-block;">
-          <a class="btn text-white" href="#">
-            COMO GANHAR MAIS EXCOINS
-          </a>
+  </div>
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label"><img src="/Projeto-Exmed-Squad7/riseup/imagens/logo2.png"
+              class="rounded" alt="exmed" width="150" height="24"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="mt-4 p-2 text-white rounded" style="width: 280px; background: #263459; display: inline-block;">
-          <a class="btn text-white text-align" href="#">
-            RECOLHA SEUS EXCOINS
-          </a>
+        <div class="modal-body">
+          <h5 class="mt-5 mb-5" style="text-align: center;">Conteúdo do Modal 1</h5>
         </div>
-      </div>
-      <div class="text-align">
-        <div class="mt-4 p-2 text-white rounded" style="width: 280px; background: #263459; display: inline-block;">
-          <a class="btn text-white" href="#">
-            CONVIDE AMIGOS E GANHE
-          </a>
-        </div>
-        <div class="mt-2 p-2 text-white rounded" style="width: 280px; background: #263459; display: inline-block;">
-          <a class="btn text-white" href="#">
-            ATRIBUA FEEDBACKS E GANHE
-          </a>
+        <div class="modal-footer justify-content-evenly">
+          <button type="button" class="btn btn-primary botao" data-bs-dismiss="modal">OK</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
-        <h2>
-          Clinicas Parceiras
-        </h2>
-        <div class="MultiCarousel-inner">
-          <div class="item">
-            <div class="pad15">
-              <p class="lead">
-                Unimed
-              </p>
-              <p> #1 </p>
-              <p> <img src="https://logodownload.org/wp-content/uploads/2014/05/unimed-logo-5-1.png" style="width: 100px; height: 100px; "> </p>
-              <p> Exame de Cardiologia </p>
-              <p> <img src="https://cdn-icons-png.flaticon.com/128/992/992000.png" style="width: 100px; height: 100px; "> </p>
-            </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">
+            <img src="/Projeto-Exmed-Squad7/riseup/imagens/logo2.png" class="rounded" alt="exmed" width="150"
+              height="24">
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="mt-5 mb-5" style="text-align: center;" id="mensagem">Clique em recolher para ganhar <strong>10
+              EXCOINS</strong></h5>
+          <div id="parabensMensagem" style="display: none;">
+            <p><strong>Parabéns! Você ganhou 10 EXCOINS.</strong></p>
+            <p id="tempoRestante"></p>
           </div>
-
-          <div class="item">
-            <div class="pad15">
-              <p class="lead">
-                Unimed
-              </p>
-              <p> #1 </p>
-              <p> <img src="https://logodownload.org/wp-content/uploads/2014/05/unimed-logo-5-1.png" style="width: 100px; height: 100px; "> </p>
-              <p> Exame de Cardiologia </p>
-              <p> <img src="https://cdn-icons-png.flaticon.com/128/992/992000.png" style="width: 100px; height: 100px; "> </p>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="pad15">
-              <p class="lead">
-                Unimed
-              </p>
-              <p> #1 </p>
-              <p> <img src="https://logodownload.org/wp-content/uploads/2014/05/unimed-logo-5-1.png" style="width: 100px; height: 100px; "> </p>
-              <p> Exame de Cardiologia </p>
-              <p> <img src="https://cdn-icons-png.flaticon.com/128/992/992000.png" style="width: 100px; height: 100px; "> </p>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="pad15">
-              <p class="lead">
-                Unimed
-              </p>
-              <p> #1 </p>
-              <p> <img src="https://logodownload.org/wp-content/uploads/2014/05/unimed-logo-5-1.png" style="width: 100px; height: 100px; "> </p>
-              <p> Exame de Cardiologia </p>
-              <p> <img src="https://cdn-icons-png.flaticon.com/128/992/992000.png" style="width: 100px; height: 100px; "> </p>
-            </div>
-          </div>
-
-         <div class="item">
-            <div class="pad15">
-              <p class="lead">
-                Unimed
-              </p>
-              <p> #1 </p>
-              <p> <img src="https://logodownload.org/wp-content/uploads/2014/05/unimed-logo-5-1.png" style="width: 100px; height: 100px; "> </p>
-              <p> Exame de Cardiologia </p>
-              <p> <img src="https://cdn-icons-png.flaticon.com/128/992/992000.png" style="width: 100px; height: 100px; "> </p>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="pad15">
-              <p class="lead"> Unimed </p>
-              <p> #1 </p>
-              <p> <img src="https://logodownload.org/wp-content/uploads/2014/05/unimed-logo-5-1.png" style="width: 100px; height: 100px; "> </p>
-              <p>
-                Exame de Cardiologia
-              </p>
-              <p>
-                <img src="https://cdn-icons-png.flaticon.com/128/992/992000.png" style="width: 100px; height: 100px; ">
-              </p>
-            </div>
-          </div>
-          
-          <div class="item">
-            <div class="pad15">
-              <p class="lead">
-                Unimed
-              </p>
-              <p> #1 </p>
-              <p> <img src="https://logodownload.org/wp-content/uploads/2014/05/unimed-logo-5-1.png" style="width: 100px; height: 100px; "> </p>
-              <p> Exame de Cardiologia </p>
-              <p> <img src="https://cdn-icons-png.flaticon.com/128/992/992000.png" style="width: 100px; height: 100px; "> </p>
-            </div>
-          </div>
-
-         <div class="item">
-            <div class="pad15">
-              <p class="lead">
-                Unimed
-              </p>
-              <p> #1 </p>
-              <p> <img src="https://logodownload.org/wp-content/uploads/2014/05/unimed-logo-5-1.png" style="width: 100px; height: 100px; "> </p>
-              <p> Exame de Cardiologia </p>
-              <p> <img src="https://cdn-icons-png.flaticon.com/128/992/992000.png" style="width: 100px; height: 100px; "> </p>
-            </div>
-
-
-          </div>
-
-        <button class="btn  leftLst text-white" style="background-color: #263459 ;"> < </button>
-        <button class="btn  rightLst text-white " style="background-color: #263459 ;"> > </button>
-
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <br /><br /><br />
-        <hr />
-        <p>What is Lorem Ipsum?</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy </p>
-        <p>text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-          specimen book.</p>
+        </div>
+        <div class="modal-footer justify-content-evenly">
+          <button type="button" class="btn btn-primary botao" id="recolherBtn">Recolher</button>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label"><img src="/Projeto-Exmed-Squad7/riseup/imagens/logo2.png"
+              class="rounded" alt="exmed" width="150" height="24"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="mt-5 mb-5" style="text-align: center;">Seu código de convite:
+            <div class="modal-body">
+              <h3>ABCD12345</h3>
+            </div>
+          </h5>
+
+        </div>
+        <div class="modal-footer justify-content-evenly">
+          <button type="button" class="btn btn-primary botao" data-bs-dismiss="modal">Copiar <img
+              src="https://cdn-icons-png.flaticon.com/128/2652/2652464.png" alt="Copiar"
+              style="width: 20px; height: 20px;"></button>
+          <button type="button" class="btn btn-primary botao" data-bs-dismiss="modal">Compartilhar <img
+              src="https://cdn-icons-png.flaticon.com/128/2549/2549406.png" alt="Copiar"
+              style="width: 20px; height: 20px;"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal4Label">
+            <img src="/Projeto-Exmed-Squad7/riseup/imagens/logo2.png" class="rounded" alt="exmed" width="150"
+              height="24">
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="mt-5 mb-5" style="text-align: center;">Envie seu feedback!</h5>
+          <textarea class="form-control" placeholder="Digite seu comentário" rows="4"></textarea>
+        </div>
+        <div class="modal-footer justify-content-evenly">
+          <button type="button" class="btn btn-primary botao" data-bs-dismiss="modal">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-4"
+    style="height: 100px; background: #263459; display: flex; justify-content: center; align-items: center;">
+    <h3 style="color: aliceblue;">Desbloqueie experiências incríveis com seus pontos na <strong>Exmed!</strong> </h3>
+  </div>
+
+
+  <!-- Carrossel de cards -->
+  <div id="carouselExample" class="carousel carousel-dark slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card mt-3">
+            <div class="img-wrapper">
+              <div class="stars-wrapper">
+                <span class="star" onclick="rateService(1, 1)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(2, 1)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(3, 1)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(4, 1)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(5, 1)">
+                  &#9733;
+                </span>
+              </div>
+              <img class="imagem-card" src="../Imagens/JAv_4ALV_400x400.jpg" class="card-img-top" alt="..."
+                style="width: 150px ; height: 130px;">
+            </div>
+            <div class="card-body">
+              <h5 class="mt-2" style="text-align: center;">
+                Hospital Santa Joana
+              </h5>
+              <p class="card-text" style="text-align: center;">
+                Especialistas em determinado exame, cirurgias e muito mais.
+              </p>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="img-wrapper">
+              <div class="stars-wrapper">
+                <span class="star" onclick="rateService(1, 2)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(2, 2)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(3, 2)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(4, 2)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(5, 2)">
+                  &#9733;
+                </span>
+              </div>
+              <img class="imagem-card" src="../Imagens/JAv_4ALV_400x400.jpg" class="card-img-top" alt="..."
+                style="width: 150px ; height: 130px;">
+            </div>
+            <div class="card-body">
+              <h5 class="mt-2" style="text-align: center;">
+                Hospital Santa Joana
+              </h5>
+              <p class="card-text" style="text-align: center;">
+                Especialistas em determinado exame, cirurgias e muito mais.
+              </p>
+              <img class="estrelas" src="..." style="width:100px;" alt="">
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="img-wrapper">
+              <div class="stars-wrapper">
+                <span class="star" onclick="rateService(1, 3)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(2, 3)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(3, 3)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(4, 3)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(5, 3)">
+                  &#9733;
+                </span>
+              </div>
+              <img class="imagem-card" src="../Imagens/JAv_4ALV_400x400.jpg" class="card-img-top" alt="..."
+                style="width: 150px ; height: 130px;">
+            </div>
+            <div class="card-body">
+              <h5 class="mt-2" style="text-align: center;">
+                Hospital Santa Joana
+              </h5>
+              <p class="card-text" style="text-align: center;">
+                Especialistas em determinado exame, cirurgias e muito mais.
+              </p>
+              <img class="estrelas" src="..." style="width:100px;" alt="">
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="img-wrapper">
+              <div class="stars-wrapper">
+                <span class="star" onclick="rateService(1, 4)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(2, 4)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(3, 4)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(4, 4)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(5, 4)">
+                  &#9733;
+                </span>
+              </div>
+              <img class="imagem-card" src="../Imagens/JAv_4ALV_400x400.jpg" class="card-img-top" alt="..."
+                style="width: 150px ; height: 130px;">
+            </div>
+            <div class="card-body">
+              <h5 class="mt-2" style="text-align: center;">
+                Hospital Santa Joana
+              </h5>
+              <p class="card-text" style="text-align: center;">
+                Especialistas em determinado exame, cirurgias e muito mais.
+              </p>
+              <img class="estrelas" src="..." style="width:100px;" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card mt-3">
+            <div class="img-wrapper">
+              <div class="stars-wrapper">
+                <span class="star" onclick="rateService(1, 5)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(2, 5)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(3, 5)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(4, 5)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(5, 5)">
+                  &#9733;
+                </span>
+              </div>
+              <img class="imagem-card" src="../Imagens/JAv_4ALV_400x400.jpg" class="card-img-top" alt="..."
+                style="width: 150px ; height: 130px;">
+            </div>
+            <div class="card-body">
+              <h5 class="mt-2" style="text-align: center;">
+                Hospital Santa Joana
+              </h5>
+              <p class="card-text" style="text-align: center;">
+                Especialistas em determinado exame, cirurgias e muito mais.
+              </p>
+              <img class="estrelas" src="..." style="width:100px;" alt="">
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="img-wrapper">
+              <div class="stars-wrapper">
+                <span class="star" onclick="rateService(1, 6)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(2, 6)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(3, 6)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(4, 6)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(5, 6)">
+                  &#9733;
+                </span>
+              </div>
+              <img class="imagem-card" src="../Imagens/JAv_4ALV_400x400.jpg" class="card-img-top" alt="..."
+                style="width: 150px ; height: 130px;">
+            </div>
+            <div class="card-body">
+              <h5 class="mt-2" style="text-align: center;">
+                Hospital Santa Joana
+              </h5>
+              <p class="card-text" style="text-align: center;">
+                Especialistas em determinado exame, cirurgias e muito mais.
+              </p>
+              <img class="estrelas" src="..." style="width:100px;" alt="">
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="img-wrapper">
+              <div class="stars-wrapper">
+                <span class="star" onclick="rateService(1, 7)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(2, 7)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(3, 7)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(4, 7)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(5, 7)">
+                  &#9733;
+                </span>
+              </div>
+              <img class="imagem-card" src="../Imagens/JAv_4ALV_400x400.jpg" class="card-img-top" alt="..."
+                style="width: 150px ; height: 130px;">
+            </div>
+            <div class="card-body">
+              <h5 class="mt-2" style="text-align: center;">
+                Hospital Santa Joana
+              </h5>
+              <p class="card-text" style="text-align: center;">
+                Especialistas em determinado exame, cirurgias e muito mais.
+              </p>
+              <img class="estrelas" src="..." style="width:100px;" alt="">
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="img-wrapper">
+              <div class="stars-wrapper">
+                <span class="star" onclick="rateService(1, 8)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(2, 8)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(3, 8)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(4, 8)">
+                  &#9733;
+                </span>
+                <span class="star" onclick="rateService(5, 8)">
+                  &#9733;
+                </span>
+              </div>
+              <img class="imagem-card" src="../Imagens/JAv_4ALV_400x400.jpg" class="card-img-top" alt="..."
+                style="width: 150px ; height: 130px;">
+            </div>
+            <div class="card-body">
+              <h5 class="mt-2" style="text-align: center;">
+                Hospital Santa Joana
+              </h5>
+              <p class="card-text" style="text-align: center;">
+                Especialistas em determinado exame, cirurgias e muito mais.
+              </p>
+              <img class="estrelas" src="..." style="width:100px;" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Botões de navegação do carrossel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true">
+      </span>
+      <span class="visually-hidden">
+        Anterior
+      </span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true">
+      </span>
+      <span class="visually-hidden">
+        Próximo
+      </span>
+    </button>
+  </div>
+  <script src=""></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <script>
+    let ratings = {};
+
+    function rateService(stars, cardNumber) {
+      ratings[cardNumber] = stars;
+
+      const starsElements = document.querySelectorAll(`.carousel-item.active .card:nth-child(${cardNumber}) .star`);
+      starsElements.forEach((starElement) => {
+        starElement.classList.remove('rated');
+      });
+
+      for (let i = 0; i < stars; i++) {
+        starsElements[i].classList.add('rated');
+      }
+
+      console.log(`Classificação selecionada do card ${cardNumber}:`, ratings[cardNumber]);
+    }
+
+  </script>
+
+  <script>
+    // Função para exibir a mensagem de parabenização e iniciar o countdown
+    function mostrarMensagem() {
+      // Ocultar a mensagem e o botão
+      document.getElementById("mensagem").style.display = "none";
+      document.getElementById("recolherBtn").style.display = "none";
+
+      // Exibir a mensagem de parabenização
+      var mensagemParabens = document.getElementById("parabensMensagem");
+      mensagemParabens.style.display = "block";
+
+      // Iniciar o countdown de 24 horas
+      var countDownDate = new Date().getTime() + 24 * 60 * 60 * 1000; // Adiciona 24 horas em milissegundos
+      var countdown = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        // Calcula o tempo restante
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Exibe o tempo restante abaixo da mensagem de parabenização
+        var tempoRestante = document.getElementById("tempoRestante");
+        tempoRestante.innerHTML = "Próxima recolha em: " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // Quando o countdown chegar a 0, limpa o intervalo e mostra a mensagem e o botão novamente
+        if (distance < 0) {
+          clearInterval(countdown);
+          mensagemParabens.style.display = "none";
+          tempoRestante.innerHTML = "";
+          document.getElementById("mensagem").style.display = "block";
+          document.getElementById("recolherBtn").style.display = "block";
+        }
+      }, 1000);
+    }
+
+    // Event listener para o botão "Recolher"
+    document.getElementById("recolherBtn").addEventListener("click", function () {
+      // Exibe a mensagem e inicia o countdown
+      mostrarMensagem();
+    });
+  </script>
+
+
 
 
 </body>

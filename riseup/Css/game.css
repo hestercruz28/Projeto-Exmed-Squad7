@@ -1,0 +1,38 @@
+.star {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.rated {
+  color: orange;
+  
+}
+
+.stars-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.card-img{
+  margin: auto;
+}
+
+.moedas-recolhidas {
+  display: none;
+  color: green;
+  font-weight: bold;
+}
+
+.dia-semana {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.destaque {
+  background-color: #f5f5f5;
+}
