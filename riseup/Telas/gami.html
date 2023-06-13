@@ -36,38 +36,24 @@
               <b> Início </b>
             </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color:#8f9296;">
-              <b> Para você </b>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="./cadastro.html" style="color: #263459;">
-                  Cadastre-se
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./login.html" style="color: #263459;">
-                  Acesse
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./gami.html" style="color: #263459;">
-                  Simulação
-                </a>
-              </li>
-            </ul>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="https://exmed.com.br/central-de-ajuda" style="color:#8f9296;">
               <b> Central de ajuda </b>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color:#8f9296;">
-              <b>Perfil</b>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color:#8f9296;">
+              <b> Perfil </b>
             </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./encerramento.html" style="color: #263459;">
+                  Sair
+                </a>
+              </li>
           </li>
+        </ul>
+        </li>
         </ul>
       </div>
     </div>
@@ -75,15 +61,16 @@
 
 
   <!-- Perfil img -->
-<div class="containe text-center mb-4">
- <a href="#"><img src="../Imagens/usuário.png" alt="" style="width: 150px;"></a> 
- <br>
- <img src="../Imagens/moeda-chinesa.png" alt="" style="width: 50px;">
-  <h5> <strong>EC:2100</strong> <h5/>
-</div>
+  <div class="containe text-center mb-4">
+    <a href="#"><img src="../Imagens/usuário.png" alt="" style="width: 150px;"></a>
+    <br>
+    <img src="../Imagens/moeda-chinesa.png" alt="" style="width: 50px;">
+    <br>
+    <h5> <strong>EXCOINS: 2.100</strong> </h5>
+  </div>
 
 
-<!-- Botões para ganhar moedas -->
+  <!-- Botões para ganhar moedas -->
   <div class="container text-center mt-4">
     <div class="row justify-content-evenly">
       <div class="anuncio col-md-4 mb-4">
@@ -103,7 +90,7 @@
         <a href="#" data-bs-toggle="modal" data-bs-target="#modal2">
           <div>
             <h3 class="mt-2">
-              Recolha seus excoins!
+              Recolha seus <strong>excoins!</strong>
             </h3>
             <p>
               Clique para saber
@@ -116,7 +103,7 @@
         <a href="#" data-bs-toggle="modal" data-bs-target="#modal3">
           <div>
             <h3 class="mt-2">
-              Convide amigos e ganhe excoins!
+              Convide amigos e ganhe <strong>excoins!</strong>
             </h3>
             <p>
               Clique para saber
@@ -147,7 +134,26 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <h5 class="mt-5 mb-5" style="text-align: center;">Conteúdo do Modal 1</h5>
+          <h7 class="mt-5 mb-5" style="text-align: center;">
+            <p>
+              <strong>Existem várias maneiras de ganhar mais excoins e aproveitar ao máximo sua experiência na
+                plataforma. Aqui estão algumas dicas:</strong>
+            </p>
+          </h7>
+          <ul>
+            <li>Complete tarefas diárias: A plataforma oferece tarefas diárias que você pode realizar para ganhar
+              excoins adicionais. Certifique-se de verificar regularmente as tarefas disponíveis e concluí-las para
+              acumular mais excoins.</li>
+            <li>Participe de promoções e eventos especiais: De tempos em tempos, a plataforma realiza promoções e
+              eventos especiais nos quais os usuários podem ganhar excoins extras. Fique de olho nas notificações e
+              participe ativamente para aumentar sua coleção de excoins.</li>
+            <li>Convide amigos: Ao convidar amigos para se juntarem à plataforma, você pode ganhar excoins como
+              recompensa. Compartilhe seu código de convite único e incentive seus amigos a se inscreverem. Quanto mais
+              amigos você convidar, mais excoins você receberá.</li>
+            <li>Atribua feedbacks: Sua opinião é valiosa para nós. Ao fornecer feedbacks construtivos sobre a
+              plataforma, você pode ganhar excoins como agradecimento. Compartilhe suas sugestões, relatórios de erros
+              ou comentários gerais através do sistema de feedback e ganhe excoins.</li>
+          </ul>
         </div>
         <div class="modal-footer justify-content-evenly">
           <button type="button" class="btn btn-primary botao" data-bs-dismiss="modal">OK</button>
@@ -385,7 +391,7 @@
           <div class="card mt-3">
             <div class="img-wrapper">
               <div class="stars-wrapper">
-                <span class="star" onclick="rateService(1, 5)">
+                <span class="star" onclick="rateService(1,5)">
                   &#9733;
                 </span>
                 <span class="star" onclick="rateService(2, 5)">
@@ -603,9 +609,6 @@
       mostrarMensagem();
     });
   </script>
-
-
-
 
 </body>
 
