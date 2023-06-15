@@ -41,19 +41,11 @@
               <b> Central de ajuda </b>
             </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color:#8f9296;">
-              <b> Perfil </b>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#8f9296;">
+              <b>Perfil</b>
             </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="./encerramento.html" style="color: #263459;">
-                  Sair
-                </a>
-              </li>
           </li>
-        </ul>
-        </li>
         </ul>
       </div>
     </div>
@@ -66,7 +58,7 @@
     <br>
     <img src="../Imagens/moeda-chinesa.png" alt="" style="width: 50px;">
     <br>
-    <h5> <strong>EXCOINS: 2.100</strong> </h5>
+    <h5> <strong id="excoins">EXCOINS: 0</strong> </h5>
   </div>
 
 
@@ -199,7 +191,8 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <h5 class="mt-5 mb-5" style="text-align: center;">Seu código de convite:
+          <h5 class="mt-5 mb-5" style="text-align: center;">Seu código de convite para ganhar <strong> 15
+              Excoins:</strong>
             <div class="modal-body">
               <h3>ABCD12345</h3>
             </div>
@@ -231,7 +224,7 @@
         </div>
         <div class="modal-body">
           <h5 class="mt-5 mb-5" style="text-align: center;">Envie seu feedback!</h5>
-          <textarea class="form-control" placeholder="Digite seu comentário" rows="4"></textarea>
+          <textarea class="form-control" placeholder="Envie seu comentário e ganhe 20 Excoins." rows="4"></textarea>
         </div>
         <div class="modal-footer justify-content-evenly">
           <button type="button" class="btn btn-primary botao" data-bs-dismiss="modal">Enviar</button>
@@ -546,69 +539,9 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 
-  <script>
-    let ratings = {};
-
-    function rateService(stars, cardNumber) {
-      ratings[cardNumber] = stars;
-
-      const starsElements = document.querySelectorAll(`.carousel-item.active .card:nth-child(${cardNumber}) .star`);
-      starsElements.forEach((starElement) => {
-        starElement.classList.remove('rated');
-      });
-
-      for (let i = 0; i < stars; i++) {
-        starsElements[i].classList.add('rated');
-      }
-
-      console.log(`Classificação selecionada do card ${cardNumber}:`, ratings[cardNumber]);
-    }
-
-  </script>
-
-  <script>
-    // Função para exibir a mensagem de parabenização e iniciar o countdown
-    function mostrarMensagem() {
-      // Ocultar a mensagem e o botão
-      document.getElementById("mensagem").style.display = "none";
-      document.getElementById("recolherBtn").style.display = "none";
-
-      // Exibir a mensagem de parabenização
-      var mensagemParabens = document.getElementById("parabensMensagem");
-      mensagemParabens.style.display = "block";
-
-      // Iniciar o countdown de 24 horas
-      var countDownDate = new Date().getTime() + 24 * 60 * 60 * 1000; // Adiciona 24 horas em milissegundos
-      var countdown = setInterval(function () {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-
-        // Calcula o tempo restante
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Exibe o tempo restante abaixo da mensagem de parabenização
-        var tempoRestante = document.getElementById("tempoRestante");
-        tempoRestante.innerHTML = "Próxima recolha em: " + hours + "h " + minutes + "m " + seconds + "s ";
-
-        // Quando o countdown chegar a 0, limpa o intervalo e mostra a mensagem e o botão novamente
-        if (distance < 0) {
-          clearInterval(countdown);
-          mensagemParabens.style.display = "none";
-          tempoRestante.innerHTML = "";
-          document.getElementById("mensagem").style.display = "block";
-          document.getElementById("recolherBtn").style.display = "block";
-        }
-      }, 1000);
-    }
-
-    // Event listener para o botão "Recolher"
-    document.getElementById("recolherBtn").addEventListener("click", function () {
-      // Exibe a mensagem e inicia o countdown
-      mostrarMensagem();
-    });
-  </script>
+  <script src="../Js/script-gameficacao/contadorExcoins.js"></script>
+  <script src="../Js/script-gameficacao/mensagemData.js"></script>
+  <script src="../Js/script-gameficacao/rateService.js"></script>
 
 </body>
 
